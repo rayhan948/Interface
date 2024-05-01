@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <style>
+      .body {
+        background-color: white !important;
+      }
+      #informasi {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .judul-informasi h2{
+        margin-bottom: 3rem;
+        font-family: 'Times New Roman', Times, serif;
+        color: blue;
+      }
+      #aplikasi {
+        height: 100vh;
+      }
+      #anggotaKelompok {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="body">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <div class="navbar-header">
+          <img
+            src="Asset/LogoH.png"
+            alt=""
+            width="50"
+            height="50"
+            align="left"
+          />
+          <a class="navbar-brand" href="#halamanku">&#160; HairWise</a>
+        </div>
+
+        <!-- Daftar Halaman -->
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#informasi">INFORMASI</a></li>
+            <li><a href="#aplikasi">APLIKASI</a></li>
+            <li><a href="#anggotaKelompok">ANGGOTA KELOMPOK</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Bagian Halaman (Informasi) -->
+    <div id="informasi" class="container-fluid">
+      <br />
+      <br />
+      <div class="row justify-content-center align-items-center">
+        <div class="col-sm-6 judul-informasi">
+          <!-- Deskripsi Aplikasi -->
+          <h2>Hair-Wise</h2>
+          <h4>
+            Temukan Gaya Rambut yang Tepat untuk Wajah Anda dengan Lebih Mudah
+            dan Lebih Cepat
+          </h4>
+          <br />
+          <p style="text-align: justify; text-justify: inter-word">
+            Selamat datang di HairWise - Aplikasi revolusioner yang membantu
+            Anda menemukan gaya rambut yang sempurna sesuai dengan bentuk wajah
+            anda. Dengan teknologi face detection AI yang canggih, HairWise
+            memungkinkan Anda untuk mencoba tiga pilihan gaya rambut utama:
+            Straight, Curly, Wavy
+          </p>
+          <br />
+
+          <!-- Tombol Mulai -->
+          <nav
+            id="navgo"
+            class="navbar"
+            style="background-color: white; z-index: 0"
+          >
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a
+                  class="btn btn-default btn-lg"
+                  href="#aplikasi"
+                  style="background: #333; color: white"
+                  >Mulai</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-6">
+          <br />
+          <br />
+          <!-- Gambar Deskripsi Aplikasi -->
+
+        </div>
+      </div>
+    </div>
+    <!-- Bagian Halaman (Aplikasi) -->
+    <div
+      id="aplikasi"
+      data-bs-spy="scroll"
+      data-bs-target="#navgo"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <br /><br />
+      <div class="row">
+        <div class="col-sm-6">
+          <!-- HP 1 (Oknum) -->
+          <div class="phone_bg1">
+            <br />
+            <br />
+
+            <div class="chat-box1">
+              <!-- header 1 (Oknum) -->
+              <div class="chat-box-header1">Oknum</div>
+
+              <div class="chat-box-body1">
+                <div class="chat-box-overlay1"></div>
+                <div class="chat-logs1">
+                  <!-- Chat Log 1 (Oknum) -->
+                </div>
+              </div>
+
+              <div class="chat-input1">
+                <form>
+                  <!-- Input Chat 1 (Oknum) -->
+                  <input
+                    type="text"
+                    id="chat-input1"
+                    placeholder="kirim pesan singkat ..."
+                  />
+
+                  <!-- Tombol Send 1 (Oknum) -->
+                  <button type="submit" class="chat-submit1" id="chat-submit1">
+                    <i class="material-icons">send</i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <!-- HP 2 (Anda) -->
+          <div class="phone_bg2">
+            <br />
+            <br />
+
+            <div class="chat-box2">
+              <!-- Header 2 (Anda) -->
+              <div class="chat-box-header2">Anda</div>
+
+              <div class="chat-box-body2">
+                <div class="chat-box-overlay2"></div>
+                <div class="chat-logs2">
+                  <!-- Chat Log 2 (Anda) -->
+                </div>
+              </div>
+            </div>
+            <div class="chat-input2">
+              <form>
+                <!-- Input Chat 2 (Anda) -->
+                <input
+                  type="text"
+                  id="chat-input2"
+                  placeholder="Kirim pesan singkat ..."
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bagian Halaman (Anggota Kelompok) -->
+    <div id="anggotaKelompok" class="container-fluid text-center">
+      <br />
+      <h2>ANGGOTA KELOMPOK</h2>
+      <h4>Tim Deployment dan Tim NLP</h4>
+      <br />
+      <div class="row slideanim">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+          <h4>Fulan</h4>
+          <p>Universitas Fulan</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+          <h4>Fulan</h4>
+          <p>Universitas Fulan</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+          <h4>Fulan</h4>
+          <p>Universitas Fulan</p>
+        </div>
+      </div>
+      <br />
+      <div class="row slideanim">
+        <div class="col-sm-6">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+          <h4>Fulan</h4>
+          <p>Universitas Fulan</p>
+        </div>
+        <div class="col-sm-6">
+          <span class="glyphicon glyphicon-user logo-small"></span>
+          <h4>Fulan</h4>
+          <p>Universitas Fulan</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid text-center">
+      <a href="#halamanku" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p>
+        Orbit Future Academy <br />
+        <a href="https://orbitfutureacademy.id/">orbitfutureacademy.id</a>
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
